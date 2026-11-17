@@ -1,0 +1,36 @@
+
+.friends {
+  background: white;
+  border-left: 4px solid #16a34a;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px #00000012;
+}
+
+.friends h2 {
+  color: #17365d;
+}
+
+.inputs {
+  display: flex;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.friend-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.friend-input input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.friends li {
+  margin: 8px 0;
+}

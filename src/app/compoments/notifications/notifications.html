@@ -1,0 +1,20 @@
+<section class="notifications">
+  <h2>🔔 Zone de notifications</h2>
+
+  <p>Vous avez 2 nouvelles notifications.</p>
+
+  <button (click)="toggleNotifications()">
+    @if (showNotifications) {
+      Masquer les notifications
+    } @else {
+      Afficher les notifications
+    }
+  </button>
+
+  @if (showNotifications) {
+    <ul>
+      <li>Bienvenue dans Conference App !</li>
+      <li>Une nouvelle conférence est disponible.</li>
+    </ul>
+  }
+</section>

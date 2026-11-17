@@ -1,0 +1,21 @@
+
+.notifications {
+  background: white;
+  border-left: 4px solid #f59e0b;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px #00000012;
+}
+
+.notifications h2 {
+  color: #17365d;
+}
+
+.notifications button {
+  padding: 10px 16px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f3f4f6;
+}

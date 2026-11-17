@@ -1,0 +1,19 @@
+
+<section class="friends" id="amis">
+  <h2>👥 Liste des amis</h2>
+
+  <div class="inputs">
+    @for (friend of friends; track $index) {
+      <input
+        type="text"
+        [(ngModel)]="friend.name"
+      />
+    }
+  </div>
+
+  <ul>
+    @for (friend of friends; track $index) {
+      <li>{{ friend.name }} - {{ friend.email }}</li>
+    }
+  </ul>
+</section>
