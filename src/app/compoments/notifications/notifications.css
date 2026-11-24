@@ -1,5 +1,6 @@
-
-.notifications {
+.card {
+  display: flex;
+  gap: 20px;
   background: white;
   border-left: 4px solid #f59e0b;
   padding: 25px;
@@ -8,14 +9,34 @@
   box-shadow: 0 2px 10px #00000012;
 }
 
-.notifications h2 {
-  color: #17365d;
+.icon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #fef3c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
 }
 
-.notifications button {
+.card h2 {
+  color: #17365d;
+  margin-top: 0;
+}
+
+.card button {
   padding: 10px 16px;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 5px;
   background: #f3f4f6;
+}
+
+.notification {
+  background: #fffbeb;
+  border-left: 3px solid #f59e0b;
+  padding: 8px 12px;
+  border-radius: 4px;
 }

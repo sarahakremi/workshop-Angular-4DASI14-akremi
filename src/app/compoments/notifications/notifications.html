@@ -1,20 +1,17 @@
-<section class="notifications">
-  <h2>🔔 Zone de notifications</h2>
+<section class="card" id="notifications">
+  <div class="icon">🔔</div>
+  <div>
+    <h2>Zone de notifications</h2>
+    <p>Vous avez {{ notifList().length }} nouvelles notifications.</p>
 
-  <p>Vous avez 2 nouvelles notifications.</p>
+    <button (click)="toggle()">
+      {{ show() ? 'Masquer les notifications' : 'Afficher les notifications' }}
+    </button>
 
-  <button (click)="toggleNotifications()">
-    @if (showNotifications) {
-      Masquer les notifications
-    } @else {
-      Afficher les notifications
+    @if (show()) {
+      @for (element of notifList(); track element) {
+        <p class="notification">{{ element }}</p>
+      }
     }
-  </button>
-
-  @if (showNotifications) {
-    <ul>
-      <li>Bienvenue dans Conference App !</li>
-      <li>Une nouvelle conférence est disponible.</li>
-    </ul>
-  }
+  </div>
 </section>

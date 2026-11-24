@@ -6,10 +6,11 @@ import { FriendList } from './compoments/friend-list/friend-list';
 import { Notifications } from './compoments/notifications/notifications';
 import { Profile } from './compoments/profile/profile';
 import { Footer } from './compoments/footer/footer';
+import { ConferenceList } from './compoments/conference-list/conference-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Header,Navbar,FriendList,Notifications,Profile,Footer],
+  imports: [RouterOutlet,Header,Navbar,FriendList,Notifications,Profile,Footer,ConferenceList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

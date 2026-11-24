@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-notifications',
@@ -7,10 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './notifications.css'
 })
 export class Notifications {
+  notifList = signal([
+    'Une nouvelle conférence est disponible.',
+    'Sami vous a envoyé une invitation.'
+  ]);
 
-  showNotifications: boolean = false;
+  show = signal(false);
 
-  toggleNotifications() {
-    this.showNotifications = !this.showNotifications;
+  toggle() {
+    this.show.set(!this.show());
   }
 }
